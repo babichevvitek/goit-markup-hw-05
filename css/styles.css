@@ -279,7 +279,7 @@ background-color: var(--hero-text-color);
 }  
   /*-- Модальное окно --*/
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -287,15 +287,15 @@ background-color: var(--hero-text-color);
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opasity250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden{
- opacity: 0;
+.backdrop .is-hidden{
+  opacity: 0;
  pointer-events: none;
- transform: scale(1.15);
+visibility: inherit;
 }
-.backdrop.is-hidden.modal{
+.backdrop.is-hidden .modal{
   transform: translate(-50%, -50%) scale(0.9);
 }
 .modal{
@@ -305,15 +305,35 @@ background-color: var(--hero-text-color);
 
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
   background: var(--hero-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.icon-box{
+  position: absolute;
+  display: flex;
+  left: 92%;
+  bottom: 92%;
+  padding: 0;
+  width: 30px;
+ height: 30px;
+ background-color: var(--hero-text-color);
+ border-radius: 50%;
+ 
+ border: 1px solid rgba(0, 0, 0, 0.1);
 
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+.icon-close-blak{
+  width: 18px;
+  height: 18px;
+  color: var(--primary-text-color);
+}
 
 
 .section{
