@@ -83,10 +83,13 @@ ul,p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.main-nav{
+  margin-left: 93px;
+}
 
 .site-nav{
   display: flex;
-  margin-left: 93px;
+ 
 }
 
 .site-nav .item {
@@ -103,6 +106,7 @@ ul,p {
 }
 
 .site-nav .link{
+ position: relative;
  display: block;
  padding-top: 32px;
  padding-bottom: 32px;
@@ -114,6 +118,7 @@ ul,p {
  font-size: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -165,18 +170,7 @@ bottom: -1px;
 .link{
   text-decoration: none;
 }
-.clients-link{
-  display: flex; 
-   
-}
-.clients-link:hover{
-background-color: var(--accent-color);
-background-color: var(--hero-text-color);
-}
-.clients-link:focus{
-  background-color: var(--accent-color);
-  background-color: var(--hero-text-color);
-}
+
 .icon-envelope-hover{
   margin-right: 10px;
   fill: currentColor;
@@ -190,6 +184,7 @@ background-color: var(--hero-text-color);
 
 
 .contact-link{
+  position: relative;
  display: block;
  padding-top: 32px;
  padding-bottom: 32px;
@@ -199,8 +194,10 @@ background-color: var(--hero-text-color);
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
- letter-spacing: 0.02em
+ letter-spacing: 0.02em;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contact-link:hover,
 .contact-link:focus{
   color:var(--accent-color);
@@ -256,6 +253,7 @@ background-color: var(--hero-text-color);
 }
 
 .button{
+  position: relative;
   display:inline-block;
   border-radius: 4px;
   border-color: transparent;
@@ -272,6 +270,7 @@ background-color: var(--hero-text-color);
  cursor: pointer;
  align-items: center;
  letter-spacing: 0.06em;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .button:hover{
@@ -287,7 +286,7 @@ background-color: var(--hero-text-color);
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  transition: opaсity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -521,6 +520,7 @@ background-color: var(--hero-text-color);
 }
 
 .social-link{
+  position: relative;
   display: flex;
  
   align-items: center;
@@ -533,6 +533,7 @@ background-color: var(--hero-text-color);
  fill: #AFB1B8;
  border-radius: 50%;
  background-color: rgba(255, 255, 255, 0.1);
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 } 
 .social-item{
   margin-right: 10px;
@@ -608,8 +609,9 @@ fill: var(--hero-text-color);
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+ 
 .clients-link{
+  position: relative;
   display: flex;
   fill: #AFB1B8;
   width: 170px;
@@ -618,7 +620,8 @@ fill: var(--hero-text-color);
   justify-content: center;
   border: 1px solid#AFB1B8;
   padding: 0;
-  border-radius: 4px;;
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -644,6 +647,24 @@ fill: var(--hero-text-color);
 .clients-item{
   list-style: none;
 }
+
+
+.clients-link{
+  display: flex; 
+   
+}
+
+.clients-link:hover{
+background-color: var(--accent-color);
+background-color: var(--hero-text-color);
+}
+
+.clients-link:focus{
+  background-color: var(--accent-color);
+  background-color: var(--hero-text-color);
+}
+
+
 
 
 
@@ -707,12 +728,14 @@ fill: var(--hero-text-color);
 }
 
 .address-link{
+  position: relative;
  color: var(--grey-text-color);
  font-family: Roboto;
  font-style: normal;
  font-size: 14px;
  line-height: 1.72;
  letter-spacing: 0.03em;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -755,6 +778,7 @@ fill: var(--hero-text-color);
  list-style: none;
 }
 .join-link{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -765,7 +789,8 @@ fill: var(--hero-text-color);
  height: 44px;
  fill: #AFB1B8;
  border-radius: 50%;
- background-color: rgba(255, 255, 255, 0.1); ;
+ background-color: rgba(255, 255, 255, 0.1); 
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 } 
 .join-list{
@@ -814,6 +839,7 @@ fill: var(--hero-text-color);
 }
 
 .buttons-list{
+  position: relative;
   border-radius: 4px;
   text-align: center;
   padding: 6px 22px;
@@ -827,7 +853,9 @@ fill: var(--hero-text-color);
  line-height: 1.85;
  cursor: pointer;
  letter-spacing: 0.03em;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .all{
   color: var(--hero-text-color);
   background-color: var(--accent-color);
@@ -871,6 +899,8 @@ fill: var(--hero-text-color);
   width: 370px;
 }
 .sites{
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 .sites:hover,
